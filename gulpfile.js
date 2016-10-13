@@ -25,6 +25,3 @@ gulp.task('watch', function(gulpCallback) {
     gulpCallback();
   });
 });
-
-
-// js/**/*.js
