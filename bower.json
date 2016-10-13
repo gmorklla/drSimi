@@ -1,0 +1,21 @@
+{
+  "name": "drsimi",
+  "description": "Dr. Simi web",
+  "main": "index.html",
+  "authors": [
+    "Alejandro RV"
+  ],
+  "license": "ISC",
+  "homepage": "www.doctorsimi.com/propuesta2",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "materialize": "^0.97.7"
+  }
+}

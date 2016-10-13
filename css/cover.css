@@ -1,0 +1,227 @@
+/* Extra markup and styles for table-esque vertical and horizontal centering */
+
+.site-wrapper {
+    display: table;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    /* For at least Firefox */
+    min-height: 100%;
+    -webkit-box-shadow: inset 0 0 100px rgba(0, 0, 0, .5);
+    box-shadow: inset 0 0 100px rgba(0, 0, 0, .5);
+    position: absolute;
+    z-index: 5;
+}
+
+.site-wrapper-inner {
+    display: table-cell;
+    vertical-align: top;
+}
+
+.cover-container {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+/*
+ * Header
+ */
+
+.masthead-brand {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.masthead-nav > li {
+    display: block;
+}
+
+.masthead-nav > li > a {
+    padding: 0;
+    font-size: 0.8em;
+    font-weight: 400;
+    color: #fff;
+    /* IE8 proofing */
+    color: rgba(255, 255, 255, 1);
+    font-family: 'Passion One', cursive;
+    text-transform: uppercase;
+}
+
+.masthead-nav > li > a:hover,
+.masthead-nav > li > a:focus {
+    background-color: transparent;
+}
+
+.masthead-nav > .active > a,
+.masthead-nav > .active > a:hover,
+.masthead-nav > .active > a:focus {
+    color: #fff;
+}
+
+
+/*
+ * Cover
+ */
+
+.cover .btn-lg {
+    padding: 10px 20px;
+    font-weight: bold;
+}
+
+
+/*
+ * Footer
+ */
+
+.mastfoot {
+    color: #999;
+    /* IE8 proofing */
+    color: rgba(255, 255, 255, .5);
+    z-index: 99;
+    position: absolute;
+    bottom: 3%;
+    width: 100%;
+}
+
+.mastfoot a {
+  color: white;
+}
+
+nav ul a.btn {
+    background: #8234D9;
+    background-image: -webkit-linear-gradient(top, #8234D9, #9C2BB8);
+    background-image: -moz-linear-gradient(top, #8234D9, #9C2BB8);
+    background-image: -ms-linear-gradient(top, #8234D9, #9C2BB8);
+    background-image: -o-linear-gradient(top, #8234D9, #9C2BB8);
+    background-image: linear-gradient(to bottom, #8234D9, #9C2BB8);
+    -webkit-box-shadow: 0px 1px 3px #000000;
+    -moz-box-shadow: 0px 1px 3px #000000;
+    box-shadow: 0px 1px 3px #000000;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 0.7em;
+    border: none;
+    text-decoration: none;
+    border-radius: 20px !important;
+    outline: none !important;
+    font-family: 'Passion One', cursive;
+    height: auto;
+    margin-left: 5px !important;
+    margin-right: 5px !important;
+    border: solid #f0f0f0 4px;
+}
+
+nav ul a.btn:hover, nav ul a.active {
+    background: #DC4091;
+    background-image: -webkit-linear-gradient(top, #DC4091, #D934B4);
+    background-image: -moz-linear-gradient(top, #DC4091, #D934B4);
+    background-image: -ms-linear-gradient(top, #DC4091, #D934B4);
+    background-image: -o-linear-gradient(top, #DC4091, #D934B4);
+    background-image: linear-gradient(to bottom, #DC4091, #D934B4);
+    text-decoration: none;
+    border-color: #fff;
+}
+
+.btn {
+    border: solid #f0f0f0 4px;
+}
+
+.navbar-nav {
+    margin: 0 -15px;
+}
+
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus {
+    color: white;
+    background-color: transparent;
+}
+
+.navbar-default .navbar-nav .open .dropdown-menu > li > a,
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+    color: white;
+}
+
+.navbar-nav > li > .dropdown-menu {
+    background: #34d9aa;
+    background-image: -webkit-linear-gradient(top, #34d9aa, #2bb857);
+    background-image: -moz-linear-gradient(top, #34d9aa, #2bb857);
+    background-image: -ms-linear-gradient(top, #34d9aa, #2bb857);
+    background-image: -o-linear-gradient(top, #34d9aa, #2bb857);
+    background-image: linear-gradient(to bottom, #34d9aa, #2bb857);
+    -webkit-border-radius: 21;
+    -moz-border-radius: 21;
+    border-radius: 21px;
+    margin-top: 10px !important;
+    border: solid #f0f0f0 4px;
+}
+
+.dropdown-menu > li > a {
+    color: white;
+}
+
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.navbar-default .navbar-toggle {
+    border-color: none;
+}
+
+
+/*
+ * Affix and center
+ */
+
+@media (min-width: 768px) {
+    .inner {
+        padding: 30px;
+    }
+    /* Pull out the header and footer */
+    .masthead {
+        position: fixed;
+        top: 3%;
+    }
+    .masthead-brand {
+        float: left;
+    }
+    .masthead-nav {
+        float: left;
+    }
+    .mastfoot {
+        position: fixed;
+        bottom: 1%;
+    }
+    .masthead-nav > li {
+        display: inline-block;
+    }
+    .masthead-nav > li + li {
+        margin-left: 15px;
+    }
+    /* Start the vertical centering */
+    .site-wrapper-inner {
+        vertical-align: middle;
+    }
+    /* Handle the widths */
+    .masthead,
+    .mastfoot,
+    .cover-container {
+        width: 100%;
+        /* Must be percentage or pixels for horizontal alignment */
+    }
+    .btn {
+        -webkit-border-radius: 21;
+        -moz-border-radius: 21;
+        border-radius: 21px !important;
+        border: solid #f0f0f0 4px;
+    }
+}
+
+@media (min-width: 992px) {
+    .inner {
+        padding: 0;
+    }
+}

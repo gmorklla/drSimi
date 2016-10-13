@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dr Simi | Ciencia</title>
+    <!--Import Google Icon Font-->
+    <link href='https://fonts.googleapis.com/css?family=Passion+One:400,700' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="bower_components/materialize/dist/css/materialize.min.css" media="screen,projection" />
+    <link type="text/css" rel="stylesheet" href="css/cover.css">
+    <link type="text/css" rel="stylesheet" href="css/perspectiveRules.css">
+    <link type="text/css" rel="stylesheet" href="css/animate.css">
+    <link type="text/css" rel="stylesheet" href="css/style.css" media="screen,projection" />
+</head>
+
+<body>
+    <div class="stars"></div>
+    <div class="twinkling"></div>
+    <div class="clouds"></div>
+    <div id="backFX">
+        <div id="particle-target"></div>
+        <img class="parallaxFx" src="img/moon.png" /><img class="parallaxFx" src="img/earthMountainsBg.png" /><img class="parallaxFx" src="img/earthMountainsFr.png" /><img class="parallaxFx" src="img/earthGround.png" />
+    </div>
+    <div class="site-wrapper">
+        <div class="site-wrapper-inner">
+            <div class="cover-container">
+                <div class="masthead clearfix">
+                    <div class="inner">
+                        <nav role="navigation">
+                            <div class="nav-wrapper container">
+                                <div class="table">
+                                    <ul id="horizontal-list" class="right hide-on-med-and-down">
+                                        <li><a class="waves-effect waves-light btn active" href="/">Mundo Simis</a></li>
+                                        <li><a class="waves-effect waves-light btn" href="ciencia.html">Ciencia</a></li>
+                                        <li><a class="waves-effect waves-light btn" href="#">Cultura</a></li>
+                                        <li><a class="waves-effect waves-light btn" href="#">Historia</a></li>
+                                        <li><a class="waves-effect waves-light btn" href="#">Wallpapers</a></li>
+                                        <li><a class="waves-effect waves-light btn" href="#">Zoocial</a></li>
+                                    </ul>
+                                </div>
+                                <ul id="nav-mobile" class="side-nav darkcyanteal lighten-2">
+                                    <p class="center-align">
+                                        <img src="img/drSimiLogo.png" alt="Dr Simi logo">
+                                    </p>
+                                    <li><a class="waves-effect waves-light btn active" href="/">Mundo Simi</a></li>
+                                    <li><a class="waves-effect waves-light btn" href="ciencia.html">Ciencia</a></li>
+                                    <li><a class="waves-effect waves-light btn" href="#">Cultura</a></li>
+                                    <li><a class="waves-effect waves-light btn" href="#">Historia</a></li>
+                                    <li><a class="waves-effect waves-light btn" href="#">Wallpapers</a></li>
+                                    <li><a class="waves-effect waves-light btn" href="#">Zoocial</a></li>
+                                </ul>
+                                <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+                <div class="inner cover">
+                    <div class="container cienciaContainer">
+                        <div class="card small hoverable animated rotateIn">
+                            <div class="card-image waves-effect waves-block waves-light">
+                                <img class="activator" src="img/mathGame.jpg">
+                            </div>
+                            <div class="card-content">
+                                <p class="center-align">
+                                    <span class="card-title activator pink-text">Desafío Matemático</span>
+                                </p>
+                            </div>
+                            <div class="card-reveal">
+                                <span class="card-title white-text"><i class="material-icons right">close</i><br>Desafío Matemático</span>
+                                <hr>
+                                <p>Pon a prueba tus habilidades matemáticas con esta actividad</p>
+                                <p class="center-align">
+                                    <a class="waves-effect waves-light btn"><i class="material-icons">done</i></a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mastfoot">
+                    <div class="inner">
+                        <p class="center-align">
+                            <a href="http://getbootstrap.com">Aviso de Privacidad</a> | <a href="https://twitter.com/mdo">Aviso Legal</a>
+                            <br>Copyright 2016 Dr. Simi
+                        </p>
+                    </div>
+                </div>
+                <div ui-view="avisos"></div>
+            </div>
+        </div>
+    </div>
+    <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="bower_components/jquery/dist/jquery.js"></script>
+    <script type="text/javascript" src="bower_components/materialize/dist/js/materialize.js"></script>
+    <!-- Pagination plugin -->
+    <script type="text/javascript" src="js/plugins/jquery.simplePagination.js"></script>
+    <!-- Jquery parallax effect -->
+    <script type="text/javascript" src="js/plugins/jquery.logosDistort.js"></script>
+    <!-- Jquery particle effect -->
+    <script type="text/javascript" src="js/plugins/jquery.particleground.min.js"></script>
+    <script src="js/init.js"></script>
+</body>
+
+</html>

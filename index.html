@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dr Simi</title>
+    <!--Import Google Icon Font-->
+    <link href='https://fonts.googleapis.com/css?family=Passion+One:400,700' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="bower_components/materialize/dist/css/materialize.min.css" media="screen,projection" />
+    <link type="text/css" rel="stylesheet" href="css/cover.css">    
+    <link type="text/css" rel="stylesheet" href="css/perspectiveRules.css">
+    <link type="text/css" rel="stylesheet" href="css/animate.css">
+    <link type="text/css" rel="stylesheet" href="css/style.css" media="screen,projection" />
+</head>
+
+<body>
+    <div class="stars"></div>
+    <div class="twinkling"></div>
+    <div class="clouds"></div>
+    <div id="backFX">
+        <div id="particle-target"></div>
+        <img class="parallaxFx" src="img/planetas.png" />
+        <img class="parallaxFx" src="img/mountainsBg.png" />
+        <img class="parallaxFx" src="img/mountainsFr.png" />
+        <img class="parallaxFx" src="img/ground.png" />
+    </div>
+    <div class="site-wrapper">
+        <div class="site-wrapper-inner">
+            <div class="cover-container">
+                <div class="masthead clearfix">
+                    <div class="inner">
+                        <div class="navbar-fixed">
+                        <nav role="navigation">
+                            <div class="nav-wrapper container">
+                                <div class="table">
+                                    <ul id="horizontal-list" class="right hide-on-med-and-down">
+                                        <li><a class="waves-effect waves-light btn active" href="/">Mundo Simi</a></li>
+                                        <li><a class="waves-effect waves-light btn" href="ciencia.html">Ciencia</a></li>
+                                        <li><a class="waves-effect waves-light btn" href="#">Cultura</a></li>
+                                        <li><a class="waves-effect waves-light btn" href="#">Historia</a></li>
+                                        <li><a class="waves-effect waves-light btn" href="#">Wallpapers</a></li>
+                                        <li><a class="waves-effect waves-light btn" href="#">Zoocial</a></li>
+                                    </ul>
+                                </div>
+                                <ul id="nav-mobile" class="side-nav darkcyanteal lighten-2">
+                                    <p class="center-align">
+                                        <img src="img/drSimiLogo.png" alt="Dr Simi logo">
+                                    </p>
+                                    <li><a class="waves-effect waves-light btn active" href="/">Mundo Simi</a></li>
+                                    <li><a class="waves-effect waves-light btn" href="ciencia.html">Ciencia</a></li>
+                                    <li><a class="waves-effect waves-light btn" href="#">Cultura</a></li>
+                                    <li><a class="waves-effect waves-light btn" href="#">Historia</a></li>
+                                    <li><a class="waves-effect waves-light btn" href="#">Wallpapers</a></li>
+                                    <li><a class="waves-effect waves-light btn" href="#">Zoocial</a></li>
+                                </ul>
+                                <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+                            </div>
+                        </nav>
+                        </div>
+                    </div>
+                </div>
+                <div class="inner cover">
+                    <div class="container mainContainer">
+                        <div class="mainContainerCastle">
+                            <p class="center-align">
+                                <img class="animated zoomInUp" src="img/floatingIsland.png" alt="Isla flotante">
+                            </p>
+                        </div>
+                        <div class="logo">
+                            <p class="center-align">
+                                <img class="animated bounceInUp" src="img/drSimiLogo.png" alt="Dr Simi logo">
+                            </p>
+                        </div>
+                        <div class="tabsC">
+                            <div class="row">
+                                <div class="col s12">
+                                    <ul class="tabs">
+                                        <li class="tab col s6"><a class="active" href="#test1">Ediciones</a></li>
+                                        <li class="tab col s6"><a href="#test2">Juego</a></li>
+                                    </ul>
+                                    <div class="container tabContent">
+                                        <div id="test1" class="col s12">
+                                            <p class="center-align">
+                                                <a id="ejeTrigger" class="waves-effect waves-light btn indigo lighten-1 animated tada modal-trigger" href="#mundoSimi"><i class="material-icons left">visibility</i>Ver</a>
+                                            </p>
+                                        </div>
+                                        <div id="test2" class="col s12">
+                                            <p class="center-align">
+                                                <a class="waves-effect waves-light btn indigo lighten-1 animated tada"><i class="material-icons left">games</i>Jugar</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mastfoot">
+                    <div class="inner">
+                        <p class="center-align">
+                            <a href="http://getbootstrap.com">Aviso de Privacidad</a> | <a href="https://twitter.com/mdo">Aviso Legal</a>
+                            <br>Copyright 2016 Dr. Simi
+                        </p>
+                    </div>
+                </div>
+                <div ui-view="avisos"></div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal Structure -->
+    <div id="mundoSimi" class="modal">
+        <div id="ejeContent" class="modal-content animated bounceIn">
+			<div id="ejeLoader" class="progress">
+				<div class="indeterminate"></div>
+			</div>
+            <h4 class="center-align hide-on-small-only">Mundo Simi - Ediciones</h4>
+            <hr>
+            <div id="ejemplar">
+                <p class="mundoSimithumb center-align">
+                    <img id="ejeImg" class="img-circle img-thumbnail" width="209" height="209" src="img/mundo-simi/mundo-simi-01.jpg" alt="">
+                </p>
+                <h2 id="ejeTitle" class="center-align">Mundo Simi 1</h2>
+                <p id="ejeDescription" class="center-align hide-on-small-only truncate">El primer ejemplar de Mundo Simi, seguro te divertirás, échale un ojo.</p>
+                <p class="center-align">
+                    <a id="ejelink" class="waves-effect waves-light btn" href="http://gruporeforma.uberflip.com/i/147593-simi-revista-julio" target="blank">Ver ejemplar</a>
+                </p>
+            </div>
+            <hr>
+        </div>
+        <div class="modal-footer">
+        	<div id="paginacion"></div>
+        </div>
+    </div>
+    <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="bower_components/jquery/dist/jquery.js"></script>
+    <script type="text/javascript" src="bower_components/materialize/dist/js/materialize.js"></script>
+    <!-- Pagination plugin -->
+    <script type="text/javascript" src="js/plugins/jquery.simplePagination.js"></script>
+    <!-- Jquery parallax effect -->
+    <script type="text/javascript" src="js/plugins/jquery.logosDistort.js"></script>
+    <!-- Jquery particle effect -->
+    <script type="text/javascript" src="js/plugins/jquery.particleground.min.js"></script>
+    <script src="js/init.js"></script>
+</body>
+
+</html>
