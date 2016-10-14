@@ -413,31 +413,31 @@ animation: move-clouds-back 200s linear infinite; */
         border-radius: 20px;
     }
 
-    .cienciaContainer .card img {
+    .cienciaContainer .card img, .culturaContainer .card img {
         border-radius: 20px;
     }
 
-    .cienciaContainer .card .card-content p, .cienciaContainer .card .card-content .card-title {
+    .cienciaContainer .card .card-content p, .cienciaContainer .card .card-content .card-title, .culturaContainer .card .card-content p, .culturaContainer .card .card-content .card-title {
         line-height: 1em;
     }
 
-    .cienciaContainer .card .card-reveal {
+    .cienciaContainer .card .card-reveal, .culturaContainer .card .card-reveal {
         background-color: blueviolet;
         border-radius: 20px;
         color: white;3
     }
 
-    .cienciaContainer .card .card-reveal .card-title {
+    .cienciaContainer .card .card-reveal .card-title, .culturaContainer .card .card-reveal .card-title {
         line-height: 0.8em;
         margin-bottom: 15px;
     }
 
-    .cienciaContainer .card .card-reveal p {
+    .cienciaContainer .card .card-reveal p, .culturaContainer .card .card-reveal p {
         margin: 15px 0;
         text-align: center;
     }
 
-    .cienciaContainer .card .card-reveal p {
+    .cienciaContainer .card .card-reveal p, .culturaContainer .card .card-reveal p {
         font-family: 'Roboto', sans-serif;
         font-size: 0.75em;
         line-height: 1.4em;
@@ -456,9 +456,13 @@ animation: move-clouds-back 200s linear infinite; */
             max-height: 500px;
         }      
         .cienciaContainer {
-            width: 17%;
+            width: 70%;
             margin-top: 0;
-        }         
+        }
+        .culturaContainer {
+            width: 70%;
+            margin-top: 0;
+        }        
         .tabs {
             border-top-left-radius: 20px;
             border-top-right-radius: 20px;

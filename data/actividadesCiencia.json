@@ -1,0 +1,27 @@
+{"actividades" : [	
+		{
+			"titulo" : "Visitanto las estrellas",
+			"descripcion": "Voltea al cielo y contempla las maravillas del espacio.",
+			"img" : "img/astronomyGame.jpg",
+			"url": "/"
+		},
+		{
+			"titulo" : "La biología",
+			"descripcion": "Es la ciencia que estudia la estructura de los seres vivos y sus procesos vitales.",
+			"img" : "img/biologyGame.jpg",
+			"url": "/"
+		},
+		{
+			"titulo" : "Desafío Físico",
+			"descripcion": "Pon a prueba tus conocimientos sobre física aquí.",
+			"img" : "img/chemistryGame.jpg",
+			"url": "/"
+		},
+		{
+			"titulo" : "Ciencia para todos",
+			"descripcion": "El camino de todo científico loco inicia aquí.",
+			"img" : "img/scienceGame.jpg",
+			"url": "/"
+		}		
+	]
+}
